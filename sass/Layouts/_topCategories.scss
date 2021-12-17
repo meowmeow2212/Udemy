@@ -1,0 +1,45 @@
+// CATEGORY
+
+.topCategories {
+    margin-top: $mg-2;
+    margin-bottom: $mg-2;
+    .topCategories__container {
+        width: 90%;
+        margin: 0 auto;
+
+        h2{
+            @include typeText($fs-3, $color-black-0, $fw-bold-1);
+            line-height: 1.33em;
+        }
+
+        .topCategories__content {
+            .cate__item {
+                padding: 10px 10px;
+
+                a {
+                    text-decoration: none;
+                    .item {
+                        border: 1px solid $color-gray-3;
+                        padding: 20px 20px;
+                        display: flex;
+                        align-items: center;
+                        transition: all 0.5s;
+                        i {
+                            @include typeText($fs-4 - 8, $color-black-0, $fw-bold-1);
+                        }
+                        span {
+                            @include typeText($fs-0, $color-black-0, $fw-normal);
+                            margin-left: $mg-1;
+                        }
+                    }
+                }
+                &:hover{
+                    .item{
+                        box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+                    }
+                    
+                }
+            }
+        }
+    }
+}

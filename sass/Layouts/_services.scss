@@ -1,0 +1,32 @@
+// SERVICES
+.services {
+    background: $color-gray-1;
+
+    .services__content {
+        margin-bottom: $mg-1;
+        .services__item {
+            background: $color-white-0;
+            margin: $mg-2 0;
+            padding: $pd-2 $pd-2;
+            display: flex;
+            height: 80%;
+
+            .services__icon {
+                height: 50px;
+                width: 50px;
+            }
+            .item__content {
+                padding: 0 $pd-1;
+
+                h4 {
+                    @include typeText($fs-2 - 1, $color-black-0, $fw-bold-1);
+                    line-height: 1.47em;
+                }
+                p {
+                    @include typeText($fs-0 + 1, $color-gray-4, $fw-normal);
+                    line-height: 1.5em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+// div linear
+
+.div-linear{
+    margin-top: $mg-2;
+    height: 8px;
+    background: linear-gradient(to right, $color-red-0, $color-red-2);
+}

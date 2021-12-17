@@ -1,0 +1,85 @@
+// FEED BACK
+.feedBack {
+    background: $color-gray-5;
+    margin-top: $mg-2;
+    // margin-bottom: $mg-2;
+    padding: 40px 0;
+    .feedBack__container {
+        width: 90%;
+        margin: 0 auto;
+        h2{
+            @include typeText($fs-3, $color-black-0, $fw-bold-1);
+            line-height: 1.33em;
+        }
+
+        .feedBack__sources {
+            margin: 0;
+            .feedback__item {
+                background: $color-white-0;
+                max-width: 100% !important;
+                padding: 40px 30px;
+                border: 1px solid $color-gray-6;
+                height: 280px;
+
+                .item__title {
+                    display: flex;
+                    align-items: center;
+                    .feedBack__img {
+                        width: 70px;
+                        height: 70px;
+                        background-image: url(../img/kh8.jpg);
+                        background-position: center center;
+                        background-size: cover;
+                        border-radius: 50%;
+                    }
+                    span {
+                        @include typeText($fs-0 + 1, $color-black-0, $fw-bold-1);
+                        line-height: 1.5em;
+                        margin-left: $mg-2;
+                    }
+
+                    .img2{
+                        width: 70px;
+                        height: 70px;
+                        background-image: url(../img/kh14.jpg);
+                        background-position: center center;
+                        background-size: cover;
+                        border-radius: 50%;
+                    }
+                    .img3{
+                        width: 70px;
+                        height: 70px;
+                        background: $color-gray-4;
+                        background-position: center center;
+                        background-size: cover;
+                        border-radius: 50%;
+                        
+                        span{
+                            color: $color-white-0;
+                            font-size: $fw-bold-1;
+                            line-height: 70px;
+                            margin-left: $mg-2 + 4;
+                            
+                        }
+                    }
+
+                }
+
+                p {
+                    line-height: 1.5em;
+                    @include typeText($fs-0 + 1, $color-gray-4, $fw-normal);
+                    padding-top: $pd-2;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE
+
+// @include reponsive("small") {
+//     .feedBack {
+//         .feedBack__container {
+//         }
+//     }
+// }

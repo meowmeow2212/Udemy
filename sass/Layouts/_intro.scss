@@ -1,0 +1,46 @@
+// INTRO
+.intro {
+    background: linear-gradient(to right, $color-red-1, $color-red-0);
+    .intro__container {
+        width: 90%;
+        margin: 0 auto;
+        padding: $pd-1;
+
+        .intro__item {
+            display: flex;
+            .item__icon {
+                @include typeText(50px, $color-white-0, $fw-bold);
+                margin-right: $mg-2;
+            }
+            .item__content {
+                padding-top: $pd-1;
+                p:first-child {
+                    @include typeText($fs-0 + 2, $color-white-0, $fw-bold);
+                    margin-bottom: 0;
+                }
+                p:last-child {
+                    @include typeText($fs-0 + 2, $color-white-0, $fw-normal);
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE
+// max-width 1200px
+@include reponsive("extra-large") {
+    .intro {
+        .intro__container {
+            .intro__item {
+                display: block;
+                .item__icon {
+                    display: none;
+                }
+
+                .item__content {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

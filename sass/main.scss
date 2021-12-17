@@ -1,0 +1,40 @@
+//không chứa code css, chỉ chứa đường dẫn tới các file con
+
+//Helper
+@import './Helper/variables';
+@import './Helper/mixin';
+
+//Vendor
+
+//Base
+@import './Base/reset';
+// chứa 
+@import './Base/customize';
+
+//Components
+// component có thể đổi thứ tự cho layout
+@import './Components/button';
+@import './Components/icon';
+
+//Layout
+@import './Layouts/header';
+@import './Layouts/cover';
+@import './Layouts/intro';
+@import './Layouts/courses';
+@import './Layouts/services';
+@import './Layouts/linear';
+@import './Layouts/student';
+@import './Layouts/banner';
+@import './Layouts/topCategories';
+@import './Layouts/feedBack';
+@import './Layouts/company';
+@import './Layouts/footer';
+//Page
+// chứa các thành phần riêng của mỗi phần trang web
+
+
+
+// Theme
+
+// Vendor
+// đè code

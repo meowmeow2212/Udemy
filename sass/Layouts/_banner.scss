@@ -1,0 +1,56 @@
+// BANNER
+
+.banner {
+    background: $color-black-0;
+    
+    margin-bottom: $mg-2;
+    padding: $pd-2 0;
+    height: auto;
+    
+
+    .container {
+        padding: 0;
+        .icon__top {
+            text-align: center;
+            justify-content: space-between;
+            @include typeText($fs-4 - 8, $color-white-0, $fw-normal);
+        }
+
+        .icon__body {
+            text-align: center;
+            justify-content: center;
+            @include typeText($fs-4 - 8, $color-white-0, $fw-normal);
+            align-items: center;
+            padding: 40px 0;
+
+            .icon__content {
+                h2 {
+                    @include typeText($fs-3, $color-white-0, $fw-bold-1);
+                    line-height: 1.33em;
+                    // margin-bottom: 16px;
+                }
+                p{
+                    @include typeText($fs-0, $color-white-0, $fw-normal);
+                }
+            }
+        }
+        .icon__bottom {
+            text-align: center;
+            justify-content: space-between;
+            @include typeText($fs-4 - 8, $color-white-0, $fw-normal);
+        }
+    }
+}
+
+// RESPONSIVE
+@include reponsive("large") {
+    .banner {
+        .container {
+            .row{
+                i{
+                    display: none;
+                }
+            }
+        }
+    }
+}

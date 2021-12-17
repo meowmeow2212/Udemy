@@ -1,0 +1,42 @@
+// COMPANY
+
+.company {
+    background: $color-gray-5;
+    padding: $pd-2 0;
+    .company__container {
+        width: 85%;
+        margin: 0 auto;
+        h2 {
+            @include typeText($fs-1, $color-gray-4, $fw-normal);
+            text-align: center;
+        }
+        .company__content__1 {
+            width: 70%;
+            margin: 0 auto;
+            padding: 20px;
+
+            .company__item {
+                .company__img {
+                    text-align: center;
+                }
+            }
+        }
+        .company__content__2 {
+            text-align: center;
+            
+            .content__item{
+               padding: $pd-2 50px;
+               
+                
+               .content__2{
+                   padding: $pd-2 60px;
+               }
+            }
+
+            .content__item:nth-child(1){
+                border-right: 1px solid $color-gray-6;
+            }
+            
+        }
+    }
+}

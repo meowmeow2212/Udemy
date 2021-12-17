@@ -1,0 +1,13 @@
+// ICON
+.fa-shopping-cart{
+    // width: 50px;
+    // height: 50px;
+    // line-height: 50px;
+    // text-align: center;
+    // border-radius: 50%;
+    @include typeText($fs-2, $color-gray-4, 900);
+    &:hover{
+        @include styleIconHover($color-gray-1, $color-gray-1, $color-gray-4 );
+    }
+    
+}
